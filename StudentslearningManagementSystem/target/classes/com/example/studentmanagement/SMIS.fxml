@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="WindowDesign" fx:id="Window" alignment="CENTER" prefHeight="440.0" prefWidth="670.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanagement.LoginSMIS">
+
+    <Label text="Welcome!">
+      <font>
+         <Font name="Inter Semi Bold" size="20.0" />
+      </font>
+   </Label>
+   <TextField maxWidth="-Infinity" prefHeight="26.0" prefWidth="300.0" promptText="ID Email" style="-fx-background-radius: 12;" translateY="10.0" />
+   <HBox alignment="CENTER" prefHeight="28.0" prefWidth="670.0">
+      <children>
+         <Label onMouseClicked="#Register" text="Create Account" translateX="-75.0" translateY="4.0">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label onMouseClicked="#ForgotPass" text="Forgot Password" translateX="75.0" translateY="4.0">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+      </children></HBox>
+    <Button fx:id="Button" alignment="CENTER" onAction="#Login" prefHeight="23.0" prefWidth="296.0" style="-fx-background-color: #850D16; -fx-background-radius: 16;" styleClass="Login-SignIn-Color" text="Login" textFill="WHITE">
+      <font>
+         <Font name="Inter Semi Bold" size="12.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="ONE_PASS_BOX" height="10.0" offsetY="2.0" radius="4.75" width="11.0">
+            <color>
+               <Color opacity="0.25" />
+            </color>
+         </DropShadow>
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </Button>
+</VBox>
